@@ -29,3 +29,7 @@ csv/raw
 
 all_cleaned_articles.csv
 tokenized_articles.csv
+
+shuffled_articles.csv
+
+/models
