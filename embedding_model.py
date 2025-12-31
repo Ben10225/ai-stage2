@@ -29,7 +29,7 @@ print("--- 正在準備語料庫 ---")
 train_corpus = list(prepare_corpus(df))
 
 # 3. 初始化並訓練模型
-model = Doc2Vec(vector_size=70, dm=1, dm_mean=1, min_count=5, epochs=50, workers=4)
+model = Doc2Vec(vector_size=150, dm=0, dm_mean=1, min_count=5, epochs=50, workers=8)
 
 print("--- 正在建立詞彙表 (Build Vocab) ---")
 model.build_vocab(train_corpus)
